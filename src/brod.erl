@@ -130,6 +130,8 @@
              , group_id/0
              , group_member/0
              , group_member_id/0
+             , transactional_id/0
+             , txn_ctx/0
              , hostname/0
              , key/0
              , msg_input/0
@@ -226,6 +228,10 @@
 -type cg() :: #brod_cg{}.
 -type cg_protocol_type() :: binary().
 -type fetch_opts() :: kpro:fetch_opts().
+
+%% transaction
+-type transactional_id() :: kpro:transactional_id().
+-type txn_ctx() :: kpro:txn_ctx().
 
 %%%_* APIs =====================================================================
 
